@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'main',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -100,3 +101,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# open weather map api key
+WEATHER_API_KEY = 'b698ef6e1626757e5c1399a2c1309dbc'
+
+FORCAST_API_KEY = '49f94128415b4aa1522a539648a2fb4b'
