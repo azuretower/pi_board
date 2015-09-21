@@ -19,4 +19,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'main.views.home', name='home'),
+    url(r'^on/$', 'main.views.light_on', name='light_on'),
+    url(r'^off/$', 'main.views.light_off', name='light_off'),
 ]
